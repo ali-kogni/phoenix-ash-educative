@@ -17,6 +17,7 @@ defmodule AshPhoenixAppWeb.Router do
   scope "/", AshPhoenixAppWeb do
     pipe_through :browser
 
+    live "/posts", PostsLiveView
     get "/", PageController, :home
   end
 
